@@ -1,0 +1,122 @@
+html {scroll-behavior: smooth;}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+* {box-sizing: border-box;}
+/* Navbar */
+.dropdown-item {transition: padding .5s ease;}
+
+.dropdown-item:hover,
+.dropdown-item:focus {padding-left: 30px;}
+.me-auto {margin: auto;}
+
+.dropdown-menu a:hover {background-color: #333;}
+
+.form-control:focus {box-shadow: 0 0 0 0.25rem #dc354547;}
+
+@media (max-width: 768px) {
+    nav .nav-link,
+    nav .form-control,
+    nav .btn-outline-danger {padding-top: 4px; padding-bottom: 4px;}
+
+    nav .navbar-toggler {padding: 3px 9px 3px 9px;}
+}
+/* Navbar */
+/* Footer  */
+.footer .container {margin-top: 100px;}
+
+@media (min-width: 1200px) {.footer .container{max-width: 1020px;}}
+@media (max-width: 1199px) {.footer .container{max-width: 1199px;}}    
+.footer ul li a {
+    color: #999;
+    transition: 0.7s;
+}
+.footer ul li a:hover {color: #555;}
+/* Footer  */
+/* Scroll  */
+.scroll {
+    width: 31px;
+    height: 31px;
+    z-index: 88888;
+    bottom: 15px;
+    right: 15px;
+} 
+.scroll svg:hover {color: #dc354689;}
+
+.show {right: -35px;}
+/* Scroll  */
+/* Grouping */
+.form-control,.form-control:focus, 
+    .contacts .icons li:hover:before,.contacts .form-check-input:checked,.contacts .form-check-input:focus
+    {border-color: #dc3545;}
+
+    .about a:hover, .cart svg:hover {color : #dc3545;}
+
+    .features .menu, .features .menu svg,
+    .cart .foodie,
+    .cookies .cookie,
+    .coffee .coff,.coffee svg,
+    .contacts .icons li::before, .contacts .form-check-input,
+    .scroll , .scroll svg
+    {transition: 0.7s;}
+
+    .features .menu:hover, .cart .foodie, .reviews .review {background-color : #eee;}
+
+    .features .menu, .cart .foodie:hover, .reviews .rate {background-color : #ddd;}
+    
+    .features .menu:hover, .cookies .cookie:hover, .coffee svg, .contacts .form-check-input, .scroll
+    {cursor: pointer;}
+    /* Grouping */
+    /* Start Grid System */
+    @media (min-width: 576px) { /* Small Devices => Landscape Phones */.container {max-width: 540px;}}
+    @media (min-width: 768px) { /* Medium Devices => Tablets */.container {max-width: 720px;}}
+    @media (min-width: 992px) { /* Desktops */.container {max-width: 960px;}} 
+    @media (min-width: 1200px) { /* Large Screens */.container {max-width: 1140px;}}
+    /* End Grid System */
+/* About */
+.imgtalk .rounded {
+    border-color: #dc3545;;
+}
+.imgtalk .img-thumbnail {
+    background-color: #dc3545;
+}
+/* About */
+/* FAQ */
+.questions .accordion-button{
+    color: #777;
+    transition: 0.3s;
+}
+.questions .accordion-button:hover {
+    color: #333;
+}
+.questions .accordion-button::after {
+    position: absolute;
+    margin-left: 0px;
+    left: 0px;
+    content: '\f078';
+    font-family: FontAwesome;
+    background-image: none;
+}
+.questions .accordion-button:not(.collapsed) {
+    color: #dc3545;
+    font-weight: bold;
+    background-color: #eee;
+    border-top: 1px solid #dc3545;
+}
+.questions .accordion-button:focus {
+    border-color: #777;
+    box-shadow: none;
+}
+.questions .accordion-body {
+    color: #777;
+}
+.faq .con {
+    color: #dc3545;
+    transition: 0.5s;
+}
+.faq .con:hover {
+    color: #555;
+}
+/* FAQ */
